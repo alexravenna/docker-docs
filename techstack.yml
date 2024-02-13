@@ -1,0 +1,809 @@
+repo_name: alexravenna/docs-1
+report_id: 4fc85a475a865bb7d77a6d654c7a1baa
+version: 0.1
+repo_type: Public
+timestamp: '2024-02-13T11:01:53+00:00'
+requested_by: stephaurelio
+provider: github
+branch: main
+detected_tools_count: 59
+tools:
+- name: CSS 3
+  description: The latest evolution of the Cascading Style Sheets language
+  website_url: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/6727/css.png
+  detection_source_url: https://github.com/alexravenna/docs-1
+  detection_source: Repo Metadata
+- name: Golang
+  description: An open source programming language that makes it easy to build simple,
+    reliable, and efficient software
+  website_url: http://golang.org/
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1005/O6AczwfV_400x400.png
+  detection_source_url: https://github.com/alexravenna/docs-1
+  detection_source: Repo Metadata
+- name: JavaScript
+  description: Lightweight, interpreted, object-oriented language with first-class
+    functions
+  website_url: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1209/javascript.jpeg
+  detection_source_url: https://github.com/alexravenna/docs-1
+  detection_source: Repo Metadata
+- name: Python
+  description: A clear and powerful object-oriented programming language, comparable
+    to Perl, Ruby, Scheme, or Java.
+  website_url: https://www.python.org
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/993/pUBY5pVj.png
+  detection_source_url: https://github.com/alexravenna/docs-1
+  detection_source: Repo Metadata
+- name: AlpineJS
+  description: A lightweight JavaScript framework for building interactive web interfaces
+  website_url: https://alpinejs.dev/
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Javascript UI Libraries
+  image_url: https://img.stackshare.io/service/101749/default_1affeb0b941376ae07126433311c338b5cd86701.jpg
+  detection_source_url: https://github.com/alexravenna/docs-1/blob/main/package.json
+  detection_source: package.json
+  last_updated_by: David Karlsson
+  last_updated_on: 2024-02-01 09:00:04.000000000 Z
+- name: Autoprefixer
+  description: PostCSS plugin to parse CSS and add vendor prefixes to CSS rules
+  website_url: https://github.com/postcss/autoprefixer
+  open_source: false
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: CSS Pre-processors / Extensions
+  image_url: https://img.stackshare.io/service/2202/72d087642cfce6fef6f2dabec5bf49e8_400x400.png
+  detection_source_url: https://github.com/alexravenna/docs-1/blob/main/package.json
+  detection_source: package.json
+  last_updated_by: David Karlsson
+  last_updated_on: 2024-02-01 09:00:04.000000000 Z
+- name: PostCSS
+  description: Transform CSS with JS plugins
+  website_url: https://github.com/postcss/postcss
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: CSS Pre-processors / Extensions
+  image_url: https://img.stackshare.io/service/3339/rlFcjEdI.png
+  detection_source_url: https://github.com/alexravenna/docs-1/blob/main/package.json
+  detection_source: package.json
+  last_updated_by: David Karlsson
+  last_updated_on: 2023-05-23 08:07:11.000000000 Z
+- name: Tailwind CSS
+  description: A utility-first CSS framework for rapid UI development
+  website_url: https://tailwindcss.com
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Front-End Frameworks
+  image_url: https://img.stackshare.io/service/8158/default_660b7c41c3ba489cb581eec89c04655404258c19.png
+  detection_source_url: https://github.com/alexravenna/docs-1/blob/main/package.json
+  detection_source: package.json
+  last_updated_by: David Karlsson
+  last_updated_on: 2024-02-01 09:00:04.000000000 Z
+- name: MongoDB
+  description: The database for giant ideas
+  website_url: http://www.mongodb.com/
+  open_source: true
+  hosted_saas: false
+  category: Data Stores
+  sub_category: Databases
+  image_url: https://img.stackshare.io/service/1030/leaf-360x360.png
+  detection_source_url: https://github.com/alexravenna/docs-1/blob/main/_releaser/go.mod
+  detection_source: _releaser/go.mod
+  last_updated_by: CrazyMax
+  last_updated_on: 2023-01-14 13:16:40.000000000 Z
+- name: Docker
+  description: Enterprise Container Platform for High-Velocity Innovation.
+  website_url: https://www.docker.com/
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Virtual Machine Platforms & Containers
+  image_url: https://img.stackshare.io/service/586/n4u37v9t_400x400.png
+  detection_source_url: https://github.com/alexravenna/docs-1
+  detection_source: Repo Metadata
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/alexravenna/docs-1
+  detection_source: Repo Metadata
+- name: GitHub Actions
+  description: Automate your workflow from idea to production
+  website_url: https://github.com/features/actions
+  open_source: false
+  hosted_saas: true
+  category: Build, Test, Deploy
+  sub_category: Continuous Integration
+  image_url: https://img.stackshare.io/service/11563/actions.png
+  detection_source_url: https://github.com/alexravenna/docs-1/blob/main/.github/workflows/build.yml
+  detection_source: ".github/workflows/build.yml"
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2023-09-13 01:52:51.000000000 Z
+- name: Moby
+  description: An open framework to assemble specialized container systems without
+    reinventing the wheel
+  website_url: https://mobyproject.org/
+  version: 25.0.3
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Container Tools
+  image_url: https://img.stackshare.io/service/6825/default_f11e3ed506711f3a8e11d3c4a69b2448fa3854d5.jpg
+  detection_source_url: https://github.com/alexravenna/docs-1/blob/main/go.mod
+  detection_source: go.mod
+  last_updated_by: David Karlsson
+  last_updated_on: 2023-05-23 08:07:11.000000000 Z
+- name: Prettier
+  description: Prettier is an opinionated code formatter.
+  website_url: https://prettier.io/
+  version: 3.2.4
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Code Review
+  image_url: https://img.stackshare.io/service/7035/default_66f265943abed56bcdbfca1c866a4261b1fbb063.jpg
+  detection_source_url: https://github.com/alexravenna/docs-1/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: David Karlsson
+  last_updated_on: 2024-02-01 08:47:57.000000000 Z
+- name: npm
+  description: The package manager for JavaScript.
+  website_url: https://www.npmjs.com/
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Front End Package Manager
+  image_url: https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png
+  detection_source_url: https://github.com/alexravenna/docs-1/blob/main/package.json
+  detection_source: package.json
+  last_updated_by: David Karlsson
+  last_updated_on: 2023-05-23 08:07:11.000000000 Z
+- name: Netlify
+  description: Build, deploy and host your static site or app with a drag and drop
+    interface and automatic delpoys from GitHub or Bitbucket
+  website_url: https://www.netlify.com/
+  open_source: false
+  hosted_saas: true
+  category: Application Utilities
+  sub_category: Static Web Hosting
+  image_url: https://img.stackshare.io/service/2748/default_5dfbb146cf22182bca88c7d07f2515a5888fc12a.jpg
+  detection_source_url: https://github.com/alexravenna/docs-1/blob/main/netlify.toml
+  detection_source: netlify.toml
+  last_updated_by: David Karlsson
+  last_updated_on: 2023-05-23 08:07:11.000000000 Z
+- name: Debian
+  description: The Universal Operating System
+  website_url: https://www.debian.org/
+  open_source: false
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Operating Systems
+  image_url: https://img.stackshare.io/service/1656/vd4gAekh.png
+  detection_source_url: https://github.com/alexravenna/docs-1/blob/main/content/engine/security/https/Dockerfile
+  detection_source: content/engine/security/https/Dockerfile
+  last_updated_by: Sven Dowideit
+  last_updated_on: 2015-01-07 00:32:23.000000000 Z
+- name: OpenAPI
+  description: Allows the owner of a network-accessible service to give universal
+    access
+  website_url: https://www.openapis.org/
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Application Utilities
+  sub_category: API Tools
+  image_url: https://img.stackshare.io/service/9792/L8C2-2bd_400x400.jpg
+  detection_source_url: https://github.com/alexravenna/docs-1/blob/main/_releaser/go.mod
+  detection_source: _releaser/go.mod
+  last_updated_by: CrazyMax
+  last_updated_on: 2022-07-18 11:56:54.000000000 Z
+- name: Shell
+  description: A shell is a text-based terminal, used for manipulating programs and
+    files. Shell scripts typically manage program execution.
+  website_url: https://en.wikipedia.org/wiki/Shell_script
+  open_source: false
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/4631/default_c2062d40130562bdc836c13dbca02d318205a962.png
+  detection_source_url: https://github.com/alexravenna/docs-1
+  detection_source: Repo Metadata
+- name: XSLT
+  description: The official Twitter account for the sum of all knowledge, Wikipedia.
+    Overseen by @jeffelder.
+  website_url: https://en.wikipedia.org/wiki/XSLT
+  open_source: false
+  hosted_saas: false
+  image_url: https://img.stackshare.io/service/4253/nZXfdUQq_normal.jpg
+  detection_source_url: https://github.com/alexravenna/docs-1
+  detection_source: Repo Metadata
+- name: adal
+  description: This package implements an HTTP request pipeline suitable for use across
+    multiple go-routines and provides the shared routines relied on by AutoRest generated
+    Go code
+  package_url: https://pkg.go.dev/github.com/Azure/go-autorest/autorest/adal
+  version: 0.5.0
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/alexravenna/docs-1/blob/main/_releaser/go.sum
+  detection_source: _releaser/go.mod
+  last_updated_by: CrazyMax
+  last_updated_on: 2022-07-18 11:56:54.000000000 Z
+- name: analysis
+  description: Openapi specification object model analyzer
+  package_url: https://pkg.go.dev/github.com/go-openapi/analysis
+  version: 0.0.0
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/alexravenna/docs-1/blob/main/_releaser/go.sum
+  detection_source: _releaser/go.mod
+  last_updated_by: CrazyMax
+  last_updated_on: 2023-01-14 13:16:40.000000000 Z
+- name: autorest
+  description: This package implements an HTTP request pipeline suitable for use across
+    multiple go-routines and provides the shared routines relied on by AutoRest generated
+    Go code
+  package_url: https://pkg.go.dev/github.com/Azure/go-autorest/autorest
+  version: 0.9.0
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/alexravenna/docs-1/blob/main/_releaser/go.sum
+  detection_source: _releaser/go.mod
+  last_updated_by: CrazyMax
+  last_updated_on: 2022-07-18 11:56:54.000000000 Z
+- name: aws-sdk-go
+  description: AWS SDK for the Go programming language
+  package_url: https://pkg.go.dev/github.com/aws/aws-sdk-go
+  version: 1.34.28
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/alexravenna/docs-1/blob/main/_releaser/go.sum
+  detection_source: _releaser/go.mod
+  last_updated_by: CrazyMax
+  last_updated_on: 2023-01-14 13:16:40.000000000 Z
+- name: buildkit
+  description: Concurrent
+  package_url: https://pkg.go.dev/github.com/moby/buildkit
+  version: 0.11.6
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/alexravenna/docs-1/blob/main/go.sum
+  detection_source: go.mod
+  last_updated_by: David Karlsson
+  last_updated_on: 2024-02-01 13:58:33.000000000 Z
+- name: date
+  description: This package implements an HTTP request pipeline suitable for use across
+    multiple go-routines and provides the shared routines relied on by AutoRest generated
+    Go code
+  package_url: https://pkg.go.dev/github.com/Azure/go-autorest/autorest/date
+  version: 0.1.0
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/alexravenna/docs-1/blob/main/_releaser/go.sum
+  detection_source: _releaser/go.mod
+  last_updated_by: CrazyMax
+  last_updated_on: 2023-01-14 13:16:40.000000000 Z
+- name: easyjson
+  description: Fast JSON serializer for golang
+  package_url: https://pkg.go.dev/github.com/mailru/easyjson
+  version: 0.0.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/alexravenna/docs-1/blob/main/_releaser/go.sum
+  detection_source: _releaser/go.mod
+  last_updated_by: CrazyMax
+  last_updated_on: 2023-01-14 13:16:40.000000000 Z
+- name: go-autorest/logger
+  description: This package implements an HTTP request pipeline suitable for use across
+    multiple go-routines and provides the shared routines relied on by AutoRest generated
+    Go code
+  package_url: https://pkg.go.dev/github.com/Azure/go-autorest/logger
+  version: 0.1.0
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/alexravenna/docs-1/blob/main/_releaser/go.sum
+  detection_source: _releaser/go.mod
+  last_updated_by: CrazyMax
+  last_updated_on: 2023-01-14 13:16:40.000000000 Z
+- name: go-jmespath
+  description: Golang implementation of JMESPath
+  package_url: https://pkg.go.dev/github.com/jmespath/go-jmespath
+  version: 0.4.0
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/alexravenna/docs-1/blob/main/_releaser/go.sum
+  detection_source: _releaser/go.mod
+  last_updated_by: CrazyMax
+  last_updated_on: 2022-07-18 11:56:54.000000000 Z
+- name: go-openapi/errors
+  description: Openapi toolkit common errors
+  package_url: https://pkg.go.dev/github.com/go-openapi/errors
+  version: 0.17.0
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/alexravenna/docs-1/blob/main/_releaser/go.sum
+  detection_source: _releaser/go.mod
+  last_updated_by: CrazyMax
+  last_updated_on: 2023-01-14 13:16:40.000000000 Z
+- name: google/uuid
+  description: 'Go package for UUIDs based on RFC 4122 and DCE 1.1: Authentication
+    and Security Services'
+  package_url: https://pkg.go.dev/github.com/google/uuid
+  version: 1.0.0
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/alexravenna/docs-1/blob/main/_releaser/go.sum
+  detection_source: _releaser/go.mod
+  last_updated_by: CrazyMax
+  last_updated_on: 2022-07-18 11:56:54.000000000 Z
+- name: govalidator
+  description: Package of validators and sanitizers for strings
+  package_url: https://pkg.go.dev/github.com/asaskevich/govalidator
+  version: 0.0.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/alexravenna/docs-1/blob/main/_releaser/go.sum
+  detection_source: _releaser/go.mod
+  last_updated_by: CrazyMax
+  last_updated_on: 2023-01-14 13:16:40.000000000 Z
+- name: jsonpointer
+  description: Fork of gojsonpointer with support for structs
+  package_url: https://pkg.go.dev/github.com/go-openapi/jsonpointer
+  version: 0.17.0
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/alexravenna/docs-1/blob/main/_releaser/go.sum
+  detection_source: _releaser/go.mod
+  last_updated_by: CrazyMax
+  last_updated_on: 2023-01-14 13:16:40.000000000 Z
+- name: jsonreference
+  description: Fork of gojsonreference with support for structs
+  package_url: https://pkg.go.dev/github.com/go-openapi/jsonreference
+  version: 0.17.0
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/alexravenna/docs-1/blob/main/_releaser/go.sum
+  detection_source: _releaser/go.mod
+  last_updated_by: CrazyMax
+  last_updated_on: 2023-01-14 13:16:40.000000000 Z
+- name: jwt-go
+  description: Golang implementation of JSON Web Tokens
+  package_url: https://pkg.go.dev/github.com/dgrijalva/jwt-go
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/alexravenna/docs-1/blob/main/_releaser/go.mod
+  detection_source: _releaser/go.mod
+  last_updated_by: CrazyMax
+  last_updated_on: 2022-07-18 11:56:54.000000000 Z
+- name: kong
+  description: Kong is a command-line parser for Go
+  package_url: https://pkg.go.dev/github.com/alecthomas/kong
+  version: 0.7.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/alexravenna/docs-1/blob/main/_releaser/go.sum
+  detection_source: _releaser/go.mod
+  last_updated_by: CrazyMax
+  last_updated_on: 2023-01-14 13:16:40.000000000 Z
+- name: loads
+  description: Openapi specification object model
+  package_url: https://pkg.go.dev/github.com/go-openapi/loads
+  version: 0.17.0
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/alexravenna/docs-1/blob/main/_releaser/go.sum
+  detection_source: _releaser/go.mod
+  last_updated_by: CrazyMax
+  last_updated_on: 2023-01-14 13:16:40.000000000 Z
+- name: logr
+  description: A simple logging interface for Go
+  package_url: https://pkg.go.dev/github.com/go-logr/logr
+  version: 1.2.2
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/alexravenna/docs-1/blob/main/_releaser/go.sum
+  detection_source: _releaser/go.mod
+  last_updated_by: CrazyMax
+  last_updated_on: 2023-01-14 13:16:40.000000000 Z
+- name: logrus
+  description: Structured, pluggable logging for Go
+  package_url: https://pkg.go.dev/github.com/sirupsen/logrus
+  version: 1.2.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/alexravenna/docs-1/blob/main/_releaser/go.sum
+  detection_source: _releaser/go.mod
+  last_updated_by: CrazyMax
+  last_updated_on: 2023-01-14 13:16:40.000000000 Z
+- name: mapstructure
+  description: Go library for decoding generic map values into native Go structures
+  package_url: https://pkg.go.dev/github.com/mitchellh/mapstructure
+  version: 1.1.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/alexravenna/docs-1/blob/main/_releaser/go.sum
+  detection_source: _releaser/go.mod
+  last_updated_by: CrazyMax
+  last_updated_on: 2023-01-14 13:16:40.000000000 Z
+- name: net
+  description: Go supplementary network libraries
+  package_url: https://pkg.go.dev/golang.org/x/net
+  version: 0.0.0
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/alexravenna/docs-1/blob/main/_releaser/go.sum
+  detection_source: _releaser/go.mod
+  last_updated_by: CrazyMax
+  last_updated_on: 2022-07-18 11:56:54.000000000 Z
+- name: opentracing-go
+  description: OpenTracing API for Go
+  package_url: https://pkg.go.dev/github.com/opentracing/opentracing-go
+  version: 1.2.0
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/alexravenna/docs-1/blob/main/_releaser/go.sum
+  detection_source: _releaser/go.mod
+  last_updated_by: CrazyMax
+  last_updated_on: 2023-01-14 13:16:40.000000000 Z
+- name: purell
+  description: Tiny Go library to normalize URLs
+  package_url: https://pkg.go.dev/github.com/PuerkitoBio/purell
+  version: 1.1.0
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/alexravenna/docs-1/blob/main/_releaser/go.sum
+  detection_source: _releaser/go.mod
+  last_updated_by: CrazyMax
+  last_updated_on: 2022-07-18 11:56:54.000000000 Z
+- name: runtime
+  description: Openapi runtime interfaces
+  package_url: https://pkg.go.dev/github.com/go-openapi/runtime
+  version: 0.0.0
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/alexravenna/docs-1/blob/main/_releaser/go.sum
+  detection_source: _releaser/go.mod
+  last_updated_by: CrazyMax
+  last_updated_on: 2023-01-14 13:16:40.000000000 Z
+- name: runtime/client
+  description: Openapi runtime interfaces
+  package_url: https://pkg.go.dev/github.com/go-openapi/runtime/client
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/alexravenna/docs-1/blob/main/_releaser/go.mod
+  detection_source: _releaser/go.mod
+  last_updated_by: CrazyMax
+  last_updated_on: 2023-01-14 13:16:40.000000000 Z
+- name: spec
+  description: Openapi specification object model
+  package_url: https://pkg.go.dev/github.com/go-openapi/spec
+  version: 0.17.0
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/alexravenna/docs-1/blob/main/_releaser/go.sum
+  detection_source: _releaser/go.mod
+  last_updated_by: CrazyMax
+  last_updated_on: 2023-01-14 13:16:40.000000000 Z
+- name: stack
+  description: Package stack implements utilities to capture
+  package_url: https://pkg.go.dev/github.com/go-stack/stack
+  version: 1.8.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/alexravenna/docs-1/blob/main/_releaser/go.sum
+  detection_source: _releaser/go.mod
+  last_updated_by: CrazyMax
+  last_updated_on: 2023-01-14 13:16:40.000000000 Z
+- name: strfmt
+  description: Openapi toolkit common string formats
+  package_url: https://pkg.go.dev/github.com/go-openapi/strfmt
+  version: 0.17.0
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/alexravenna/docs-1/blob/main/_releaser/go.sum
+  detection_source: _releaser/go.mod
+  last_updated_by: CrazyMax
+  last_updated_on: 2023-01-14 13:16:40.000000000 Z
+- name: swag
+  description: Goodie bag in use in the go-openapi projects
+  package_url: https://pkg.go.dev/github.com/go-openapi/swag
+  version: 0.17.0
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/alexravenna/docs-1/blob/main/_releaser/go.sum
+  detection_source: _releaser/go.mod
+  last_updated_by: CrazyMax
+  last_updated_on: 2023-01-14 13:16:40.000000000 Z
+- name: sys
+  description: Go packages for low-level interaction with the operating system
+  package_url: https://pkg.go.dev/golang.org/x/sys
+  version: 0.0.0
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/alexravenna/docs-1/blob/main/_releaser/go.sum
+  detection_source: _releaser/go.mod
+  last_updated_by: CrazyMax
+  last_updated_on: 2022-07-18 11:56:54.000000000 Z
+- name: text
+  description: Go text processing support
+  package_url: https://pkg.go.dev/golang.org/x/text
+  version: 0.3.0
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/alexravenna/docs-1/blob/main/_releaser/go.sum
+  detection_source: _releaser/go.mod
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2023-10-11 23:21:48.000000000 Z
+- name: ulid
+  description: Universally Unique Lexicographically Sortable Identifier
+  package_url: https://pkg.go.dev/github.com/oklog/ulid
+  version: 1.3.1
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/alexravenna/docs-1/blob/main/_releaser/go.sum
+  detection_source: _releaser/go.mod
+  last_updated_by: CrazyMax
+  last_updated_on: 2023-01-14 13:16:40.000000000 Z
+- name: urlesc
+  description: Proper URL escaping as per RFC3986
+  package_url: https://pkg.go.dev/github.com/PuerkitoBio/urlesc
+  version: 0.0.0
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/alexravenna/docs-1/blob/main/_releaser/go.sum
+  detection_source: _releaser/go.mod
+  last_updated_by: CrazyMax
+  last_updated_on: 2022-07-18 11:56:54.000000000 Z
+- name: validate
+  description: Openapi toolkit validation helpers
+  package_url: https://pkg.go.dev/github.com/go-openapi/validate
+  version: 0.18.0
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/alexravenna/docs-1/blob/main/_releaser/go.sum
+  detection_source: _releaser/go.mod
+  last_updated_by: CrazyMax
+  last_updated_on: 2023-01-14 13:16:40.000000000 Z
+- name: yaml.v2
+  description: YAML support for the Go language
+  package_url: https://pkg.go.dev/gopkg.in/yaml.v2
+  version: 2.0.0
+  license: LGPL-3.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/alexravenna/docs-1/blob/main/_releaser/go.sum
+  detection_source: _releaser/go.mod
+  last_updated_by: CrazyMax
+  last_updated_on: 2022-07-18 11:56:54.000000000 Z
+  vulnerabilities:
+  - name: Excessive Platform Resource Consumption within a Loop in Kubernetes
+    cve_id: CVE-2019-11254
+    cve_url: https://github.com/advisories/GHSA-wxc4-f4m6-wwqv
+    detected_date: Jan 28
+    severity: moderate
+    first_patched: 2.2.8
+- name: "@tailwindcss/typography"
+  description: A Tailwind CSS plugin for automatically styling plain HTML content
+    with beautiful typographic defaults
+  package_url: https://www.npmjs.com/@tailwindcss/typography
+  version: 0.5.10
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/npm/image.png
+  detection_source_url: https://github.com/alexravenna/docs-1/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: David Karlsson
+  last_updated_on: 2024-02-01 09:00:04.000000000 Z
+- name: postcss-cli
+  description: CLI for PostCSS
+  package_url: https://www.npmjs.com/postcss-cli
+  version: 11.0.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16326/default_97104dc50154593d2dde1d791400955934c9c715.png
+  detection_source_url: https://github.com/alexravenna/docs-1/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: David Karlsson
+  last_updated_on: 2024-02-01 09:00:04.000000000 Z
+- name: postcss-import
+  description: PostCSS plugin to import CSS files
+  package_url: https://www.npmjs.com/postcss-import
+  version: 16.0.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16086/default_d4e765f8a43dcfd232c8b9ee9732058bc27c727a.png
+  detection_source_url: https://github.com/alexravenna/docs-1/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: David Karlsson
+  last_updated_on: 2024-02-01 09:00:04.000000000 Z
+- name: tailwindcss
+  description: A utility-first CSS framework for rapidly building custom user interfaces
+  package_url: https://www.npmjs.com/tailwindcss
+  version: 3.4.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/17398/default_2cd7ed1c123f2fca074a6f4b16c4e73d5bfe82be.png
+  detection_source_url: https://github.com/alexravenna/docs-1/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: David Karlsson
+  last_updated_on: 2024-02-01 09:00:04.000000000 Z
