@@ -37,16 +37,15 @@ Models are pulled from Docker Hub the first time they're used and stored locally
 
 ### Enable DMR in Docker Desktop
 
-1. Navigate to the **Features in development** tab in settings.
-2. Under the **Experimental features** tab, select **Access experimental features**.
-3. Select **Apply and restart**.
-4. Quit and reopen Docker Desktop to ensure the changes take effect.
-5. Open the **Settings** view in Docker Desktop.
-6. Navigate to **Features in development**.
-7. From the **Beta** tab, tick the **Enable Docker Model Runner** setting.
-8. If you are running on Windows with a supported NVIDIA GPU, you should also see and be able to tick the **Enable GPU-backed inference** setting.
+1. Navigate to the **Beta features** tab in settings.
+2. Tick the **Enable Docker Model Runner** setting.
+3. If you are running on Windows with a supported NVIDIA GPU, you should also see and be able to tick the **Enable GPU-backed inference** setting.
 
 You can now use the `docker model` command in the CLI and view and interact with your local models in the **Models** tab in the Docker Desktop Dashboard.
+
+> [!IMPORTANT]
+>
+> For Docker Desktop versions 4.41 and earlier, this settings lived under the **Experimental features** tab on the **Features in development** page.
 
 ### Enable DMR in Docker Engine
 
@@ -83,7 +82,7 @@ You can now use the `docker model` command in the CLI and view and interact with
 
 Models are cached locally.
 
-{{< tabs >}}
+{{< tabs group="release" >}}
 {{< tab name="From Docker Desktop">}}
 
 1. Select **Models** and select the **Docker Hub** tab.
@@ -99,14 +98,14 @@ Use the [`docker model pull` command](/reference/cli/docker/).
 
 ## Run a model
 
-{{< tabs >}}
+{{< tabs group="release" >}}
 {{< tab name="From Docker Desktop">}}
 
 Select **Models** and select the **Local** tab and click the play button.
 The interactive chat screen opens.
 
 {{< /tab >}}
-{{< tab name="From the Docker CLI">}}
+{{< tab name="From the Docker CLI" >}}
 
 Use the [`docker model run` command](/reference/cli/docker/).
 
@@ -117,7 +116,7 @@ Use the [`docker model run` command](/reference/cli/docker/).
 
 To troubleshoot potential issues, display the logs:
 
-{{< tabs >}}
+{{< tabs group="release" >}}
 {{< tab name="From Docker Desktop">}}
 
 Select **Models** and select the **Logs** tab.
@@ -320,11 +319,16 @@ To fix this, create a symlink so Docker can detect it:
 $ ln -s /Applications/Docker.app/Contents/Resources/cli-plugins/docker-model ~/.docker/cli-plugins/docker-model
 ```
 
-Once linked, re-run the command.
+Once linked, rerun the command.
 
 ### No safeguard for running oversized models
 
-Currently, Docker Model Runner doesn't include safeguards to prevent you from launching models that exceed their system's available resources. Attempting to run a model that is too large for the host machine may result in severe slowdowns or render the system temporarily unusable. This issue is particularly common when running LLMs models without sufficient GPU memory or system RAM.
+Currently, Docker Model Runner doesn't include safeguards to prevent you from
+launching models that exceed your system's available resources. Attempting to
+run a model that is too large for the host machine may result in severe
+slowdowns or may render the system temporarily unusable. This issue is
+particularly common when running LLMs without sufficient GPU memory or system
+RAM.
 
 ### No consistent digest support in Model CLI
 
