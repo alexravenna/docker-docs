@@ -19,6 +19,7 @@ aliases:
 ## Key features
 
 - [Pull and push models to and from Docker Hub](https://hub.docker.com/u/ai)
+- Package GGUF files as OCI Artifacts and publish them to any Container Registry
 - Run and interact with AI models directly from the command line or from the Docker Desktop GUI
 - Manage local models and display logs
 
@@ -37,16 +38,15 @@ Models are pulled from Docker Hub the first time they're used and stored locally
 
 ### Enable DMR in Docker Desktop
 
-1. Navigate to the **Features in development** tab in settings.
-2. Under the **Experimental features** tab, select **Access experimental features**.
-3. Select **Apply and restart**.
-4. Quit and reopen Docker Desktop to ensure the changes take effect.
-5. Open the **Settings** view in Docker Desktop.
-6. Navigate to **Features in development**.
-7. From the **Beta** tab, tick the **Enable Docker Model Runner** setting.
-8. If you are running on Windows with a supported NVIDIA GPU, you should also see and be able to tick the **Enable GPU-backed inference** setting.
+1. Navigate to the **Beta features** tab in settings.
+2. Tick the **Enable Docker Model Runner** setting.
+3. If you are running on Windows with a supported NVIDIA GPU, you should also see and be able to tick the **Enable GPU-backed inference** setting.
 
 You can now use the `docker model` command in the CLI and view and interact with your local models in the **Models** tab in the Docker Desktop Dashboard.
+
+> [!IMPORTANT]
+>
+> For Docker Desktop versions 4.41 and earlier, this settings lived under the **Experimental features** tab on the **Features in development** page.
 
 ### Enable DMR in Docker Engine
 
@@ -83,7 +83,7 @@ You can now use the `docker model` command in the CLI and view and interact with
 
 Models are cached locally.
 
-{{< tabs >}}
+{{< tabs group="release" >}}
 {{< tab name="From Docker Desktop">}}
 
 1. Select **Models** and select the **Docker Hub** tab.
@@ -99,14 +99,14 @@ Use the [`docker model pull` command](/reference/cli/docker/).
 
 ## Run a model
 
-{{< tabs >}}
+{{< tabs group="release" >}}
 {{< tab name="From Docker Desktop">}}
 
 Select **Models** and select the **Local** tab and click the play button.
 The interactive chat screen opens.
 
 {{< /tab >}}
-{{< tab name="From the Docker CLI">}}
+{{< tab name="From the Docker CLI" >}}
 
 Use the [`docker model run` command](/reference/cli/docker/).
 
@@ -117,7 +117,7 @@ Use the [`docker model run` command](/reference/cli/docker/).
 
 To troubleshoot potential issues, display the logs:
 
-{{< tabs >}}
+{{< tabs group="release" >}}
 {{< tab name="From Docker Desktop">}}
 
 Select **Models** and select the **Logs** tab.
@@ -129,6 +129,36 @@ Use the [`docker model log` command](/reference/cli/docker/).
 
 {{< /tab >}}
 {{< /tabs >}}
+
+## Publish a model
+
+> [!NOTE]
+>
+> This works for any Container Registry supporting OCI Artifacts, not only Docker Hub.
+
+You can tag existing models with a new name and publish them under a different namespace and repository:
+
+```console
+# Tag a pulled model under a new name
+$ docker model tag ai/smollm2 myorg/smollm2
+
+# Push it to Docker Hub
+$ docker model push myorg/smollm2
+```
+
+For more details, see the [`docker model tag`](/reference/cli/docker/model/tag) and [`docker model push`](/reference/cli/docker/model/push) command documentation.
+
+You can also directly package a model file in GGUF format as an OCI Artifact and publish it to Docker Hub.
+
+```console
+# Download a model file in GGUF format, e.g. from HuggingFace
+$ curl -L -o model.gguf https://huggingface.co/TheBloke/Mistral-7B-v0.1-GGUF/resolve/main/mistral-7b-v0.1.Q4_K_M.gguf
+
+# Package it as OCI Artifact and push it to Docker Hub
+$ docker model package --gguf "$(pwd)/model.gguf" --push myorg/mistral-7b-v0.1:Q4_K_M
+```
+
+For more details, see the [`docker model package`](/reference/cli/docker/model/package/) command documentation.
 
 ## Example: Integrate Docker Model Runner into your software development lifecycle
 
@@ -320,11 +350,16 @@ To fix this, create a symlink so Docker can detect it:
 $ ln -s /Applications/Docker.app/Contents/Resources/cli-plugins/docker-model ~/.docker/cli-plugins/docker-model
 ```
 
-Once linked, re-run the command.
+Once linked, rerun the command.
 
 ### No safeguard for running oversized models
 
-Currently, Docker Model Runner doesn't include safeguards to prevent you from launching models that exceed their system's available resources. Attempting to run a model that is too large for the host machine may result in severe slowdowns or render the system temporarily unusable. This issue is particularly common when running LLMs models without sufficient GPU memory or system RAM.
+Currently, Docker Model Runner doesn't include safeguards to prevent you from
+launching models that exceed your system's available resources. Attempting to
+run a model that is too large for the host machine may result in severe
+slowdowns or may render the system temporarily unusable. This issue is
+particularly common when running LLMs without sufficient GPU memory or system
+RAM.
 
 ### No consistent digest support in Model CLI
 
